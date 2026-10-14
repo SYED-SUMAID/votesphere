@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoteSphere | Voting App</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>VoteSphere</h1>
+        <p>Your opinion. Your vote. Your impact.</p>
+    </header>
+
+    <main>
+        <section class="poll-card">
+            <p class="tag">COMMUNITY POLL</p>
+
+            <h2 id="question">Loading poll...</h2>
+
+            <form id="voting-form">
+                <div id="options"></div>
+
+                <button type="submit" id="vote-button">
+                    Submit Vote
+                </button>
+            </form>
+
+            <p id="message" role="status"></p>
+
+            <section id="results-section">
+                <h3>Live Results</h3>
+                <div id="results"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        Built with FastAPI and Python
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
